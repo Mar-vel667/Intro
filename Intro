@@ -1,6 +1,9 @@
 #include <iostream>
 
 int main(){
-std::cout<<"My name is Emmanuel Elikplim Bedzrah" << std:: endl;
+std::cout<<"My name is Emmanuel Elikplim Bedzrah." << std::endl;
+std::cout<<"I'm a student of AIT." << std::endl;
+std::cout<<"I like playing football." << std::endl;
+std::cout<<"I offer information technology." << std::endl;
 return 0;
 } 
