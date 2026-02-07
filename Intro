@@ -1,6 +1,6 @@
 #include <iostream>
 
-intro main(){
+int main(){
 std::cout<<"My name is Emmanuel Elikplim Bedzrah" << std:: endl;
 return 0;
 } 
