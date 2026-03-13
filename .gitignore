@@ -1,41 +1,58 @@
-# Prerequisites
-*.d
+#include <iostream>
+using namespace std;
+int main(int argc, char** argv) {
+// Declaring an array
+int n;
+int i;
+int mymarks;
+int myFreq;
+cout<<"Please specify the size:"; 
+cin>>n;
+int marks[n];
+int frequency[n];
+int FX[n];
+int sumF;
+int sumFX;
+sumF=0;
+sumFX=0;
+cout<<"PLEASE ENTER THE MARKS"<<"\n";
+for(i=0;i<n;i++)
+{
+	cin>>mymarks;
+	marks[i]=mymarks;
+	
+}
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+//accepting frequencies
+cout<<"PLEASE ENTER THE FREQUENCY"<<"\n";
+for(i=0;i<n;i++)
+{
+	cin>>myFreq;
+	frequency[i]=myFreq;
+	sumF = sumF + frequency[i];
+	
+}
 
-# Precompiled Headers
-*.gch
-*.pch
+//creating FX
+for(i=0;i<n;i++)
+{
+	FX[i]=frequency[i]*marks[i];
+	sumFX = sumFX + 	FX[i];
 
-# Linker files
-*.ilk
+	
+}
 
-# Debugger Files
-*.pdb
+//displaying the results
+cout<<"MARKS"<<"\t"<<"FREQUENCY"<<"\t"<<"FX"<<"\n";
+for(i=0;i<n;i++)
+{
+cout<<marks[i]<<"\t"<<frequency[i]<<"\t"<<"\t"<<	FX[i]<<\n";
+	
+}
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+cout<<"    "<<"\t"<<sumF<<"\t"<<sumFX<<"n";
 
-# Fortran module files
-*.mod
-*.smod
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
-*.dwo
+	return 0;
+	
+}
